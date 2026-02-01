@@ -4,8 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-         <h1>[N° 08]_[Toky]_Formulaire_DevWeb_PEF_26: </h1>
+    <style>
+    body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #dbd7d7;
+        }
+    header {
+            background: #276bb4;
+            color: #ada2a2;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: #e6e4e4;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #080707;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(15, 4, 4, 0.6), rgba(15, 3, 3, 0.6)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(223, 218, 218);
+            text-align: center;
+        }
+        .container {
+            padding: 2rem 5%;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .price {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">AUTO-TECH</div>
+        <nav>
+            <ul>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#">Inscription</a></li>
+                <li><a href="#">Se connecter</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <section class="hero">
+        <h1>Équipez votre véhicule</h1>
+        <p>Le meilleur matériel automobile aux meilleurs prix.</p>
+    </section>
+
+    <div class="container">
+        <h2 id="produits">Nos Produits </h2>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="gettyimages-183797799-612x612.jpg" alt="Batterie Auto">
+                <h3>Batterie Haute Performance</h3>
+                <p>Capacité 70Ah - Puissance au démarrage optimale.</p>
+                <p class="price">350 000 Ar</p>
+                <a href="#" class="btn">Acheter</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x150?text=Huile" alt="Huile Moteur">
+                <h3>Huile Synthétique 5W30</h3>
+                <p>Protection maximale pour moteurs modernes.</p>
+                <p class="price">70 000 Ar</p>
+                <a href="#" class="btn">Acheter</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images.jpg" alt="Pneus">
+                <h3>Pneu Toutes Saisons</h3>
+                <p>Excellente adhérence sur sol mouillé.</p>
+                <p class="price">1 000 000 Ar</p>
+                <a href="#" class="btn">Acheter</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
 
 
